@@ -131,7 +131,8 @@ extern const u8 gImage_image[];
 				GPIO_SetBits(GPIOE,GPIO_Pin_5);
 				
 			};
-			LCD_ShowNum(30,180,wd_flag,5,16);
+			LCD_ShowString(30,170,200,16,16,"SetTemp:   C");	
+			LCD_ShowNum(30+40+32,170,wd_flag,2,16);
 			if(wd_flag>30||wd_flag<0)wd_flag=19;
 			if(temperature<0)
 			{
